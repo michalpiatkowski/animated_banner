@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 14px;
+    animation: bodyOpacity 2s normal forwards;
+    animation-delay: 10s;
+}
+
+@keyframes bodyOpacity {
+    100% {opacity: 0}
+}
+
+p {
+    padding: 22px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.banner {
+    width: 360px;
+    height: 360px;
+    animation: background 1s normal forwards;
+    animation-delay: 5s;
+}
+
+@keyframes background {
+    0% {background-color: white}
+    100% {background-color: black}
+}
+
+.first-text { 
+    opacity: 0;
+    animation: firstText 1s normal forwards;
+    animation-delay: 1s;
+}
+
+@keyframes firstText {
+    0% { opacity: 0}
+    50% {opacity: 0.5}
+    100% { opacity: 1}
+}
+
+.second-text {
+    font-size: 0px;
+    animation: secondTextFont 1s normal forwards;
+    animation-delay: 2s;
+}
+
+@keyframes secondTextFont {
+    0% {font-size: 0px}
+    20% {font-size: 11px}
+    40% {font-size: 0px}
+    60% {font-size: 22px}
+    80% {font-size: 0px}
+    100% {font-size: 34px}
+}
+
+.third-text {
+    font-size: 50px;
+    display: block;
+    transform: rotate(-180deg);
+    animation: thirdTextRotation 1s normal forwards, firstText 1s normal forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+@keyframes thirdTextRotation {
+    0% {transform: rotate(-90deg)}
+    100% {transform: rotate(0deg)}
+}
+
+.fourth-text {
+    font-size: 58px;
+    margin-left: -500px;
+    animation: fourthTextMargin 1s normal forwards;
+    animation-delay: 4s;
+}
+
+@keyframes fourthTextMargin {
+    0% {margin-left: -300px}
+    100% {margin-left: 0px}
+}
+
+p {
+    animation: textWhite 1s normal forwards;
+    animation-delay: 5s;
+}
+
+@keyframes textWhite {
+    0% {color: black}
+    100% {color: white}
+}
+
+.wheel {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    animation: wheel 1s normal forwards;
+    animation-delay: 6s;
+    opacity: 0;
+    margin-top: -50px;
+}
+
+@keyframes wheel {
+    0% {display: block}
+    0% {width: 0px}
+    0% {height: 0px}
+    0% {margin-left: -500px}
+    0% {opacity: 0.5}
+    25% {background-color: chartreuse}
+    50% {background-color: blueviolet}
+    75% {background-color: deeppink}
+    100% {background-color: yellow}
+    100% {width: 100px}
+    100% {height: 100px}
+    100% {margin-left: 250px;}
+    100% {opacity: 1}
+}
+
+
