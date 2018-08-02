@@ -1,10 +1,7 @@
 # animated_banner
 
-Ćwiczenie - projekt animowanego banera. 
+Exercise: animated banner 
 
-Wykorzystane technologie:
-
-HMTL5
-CSS3
+HMTL5 & CSS3
 
 https://michalpiatkowski.github.io/animated_banner/
